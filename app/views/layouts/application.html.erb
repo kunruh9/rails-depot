@@ -11,13 +11,14 @@
   <body class='<%= controller.controller_name %>'>
     <div id="banner">
       <%= image_tag 'logo.svg', alt: 'The Pragmatic Bookshelf' %>
+      <p id="time"><%= Time.now.strftime '%A, %B %e, %Y %l:%M:%S%P %Z' %></p>
       <span class="title"><%= @page_title %></span>
     </div>
     <div id="columns">
       <div id="side">
         <ul>
           <li><a href="http://www....">Home</a></li>
-          <li><a href="http://www..../faq">Questrions</a></li>
+          <li><a href="http://www..../faq">Questions</a></li>
           <li><a href="http://www..../news">News</a></li>
           <li><a href="http://www..../contact">Contact</a></li>
         </ul>

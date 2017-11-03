@@ -27,6 +27,12 @@ body, body > p, body > ol, body > ul, body > td {margin: 8px !important}
   color: #282;
   text-align: center;
 
+  #time {
+    color: #282;
+    text-align: right;
+    margin: 5px;
+  }
+
   img {
     position: absolute;
     top: 0;
