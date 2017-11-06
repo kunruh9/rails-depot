@@ -8,7 +8,5 @@ class StoreController < ApplicationController
     session[:counter] += 1
 
     @products = Product.order(:title)
-
-    puts "Store accessed #{session[:counter]} times\n"
   end
 end

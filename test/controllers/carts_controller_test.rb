@@ -39,10 +39,15 @@ class CartsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should destroy cart" do
-    assert_difference('Cart.count', -1) do
-      delete cart_url(@cart)
-    end
+    post line_items_url, params: { product_id: products(:ruby).id }
+    @cart = Cart.find(session[:cart_id])
 
-    assert_redirected_to carts_url
+    delete cart_url(@cart)
+
+    # DEVATION NOTE: I wrote this test differently than in the book. Thought this
+    # was a better test. Deviation occurred on page 140
+    assert_nil Cart.find_by(id: @cart.id)
+
+    assert_redirected_to store_index_url
   end
 end
