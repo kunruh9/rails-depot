@@ -3,7 +3,9 @@
 one:
   product: two
   cart: one
+  price: product.price
 
 two:
   product: two
   cart: two
+  price: product.price
