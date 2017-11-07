@@ -6,6 +6,6 @@ one:
   price: product.price
 
 two:
-  product: two
-  cart: two
+  product: ruby
+  order: one
   price: product.price
