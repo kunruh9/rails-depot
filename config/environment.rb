@@ -12,8 +12,8 @@ Depot::Application.configure do
     port:                 587,
     domain:               "gmail.com",
     authentication:       "plain",
-    user_name:            "kunruh9@gmail.com",
-    password:             "d0YUERkUQ7l7mM7^rDe&1",
+    user_name:            "kylo.ren.refer@gmail.com",
+    password:             "***REMOVED***",
     enable_starttls_auto: true
   }
 end
