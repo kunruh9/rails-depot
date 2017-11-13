@@ -8,4 +8,4 @@ one:
 two:
   product: ruby
   order: one
-  price: 49.50
+  price: 49.50 # TODO: this used to be dynamic (referenced the product fixture's price, but this broke after migrating to PostgreSQL). Research fixtures more in the future
