@@ -1,1 +1,10 @@
 -- Really lost on the atom feed stuff for Task G2. Should make another run through it
+
+
+TIPS & GOTCHAS:
+-- Apparently the rails server will try to automatically detect the database adapter
+   based on environment variables. this is done quietly and without notice...which is
+   really awesomely confusing. While the environment variable DATABASE_URL is set,
+   rails assumes that you are using postgresql. Maybe there is a hiarchy for
+   determining the database type (e.g. config file > environment variables), but
+   that wasn't clear at all.
