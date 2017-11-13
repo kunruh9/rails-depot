@@ -3,9 +3,9 @@
 one:
   product: two
   cart: one
-  price: product.price
+  price: 9.99
 
 two:
   product: ruby
   order: one
-  price: product.price
+  price: 49.50
