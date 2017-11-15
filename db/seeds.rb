@@ -8,6 +8,7 @@
 #---
 # encoding: utf-8
 
+User.delete_all
 LineItem.delete_all
 Order.delete_all
 Product.delete_all
