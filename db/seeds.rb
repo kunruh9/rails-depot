@@ -7,6 +7,9 @@
 # Visit http://www.pragmaticprogrammer.com/titles/rails5 for more book information.
 #---
 # encoding: utf-8
+
+LineItem.delete_all
+Order.delete_all
 Product.delete_all
 Product.create!(title: 'Rails, Angular, Postgres, and Bootstrap',
   description:
@@ -53,3 +56,5 @@ Product.create!(title: 'Ruby Performance Optimization',
       </p>},
   image_url: 'adrpo.jpg',
   price: 46.00)
+
+User.create!(name: 'Kyle', password: 'sosecure123', password_confirmation: 'sosecure123')
