@@ -6,4 +6,4 @@ test:
 
 production:
   adapter: redis
-  url: redis://localhost:6379/1 # TODO: Modify this for production in Heroku (https://blog.heroku.com/real_time_rails_implementing_websockets_in_rails_5_with_action_cable#deploying-our-application-to-heroku)
+  url: redis://redistogo:500ccbd565d3182ef0247898ed9c7c55@crestfish.redistogo.com:10460/
